@@ -416,7 +416,7 @@ export default function Home() {
             THIS WEEK
             <SectionCount>(50)</SectionCount>
           </SectionTitle>
-          <SeeAllLink href="/new">See All</SeeAllLink>
+          <SeeAllLink href="/collections">See All</SeeAllLink>
         </SectionHeader>
 
         <ProductGrid>

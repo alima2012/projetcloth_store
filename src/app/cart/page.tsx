@@ -5,6 +5,10 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight, Heart, RefreshCw, X } from "lucide-react"
 import styled from "styled-components"
 
+// Importation directe des images des produits du panier
+import cartItem1 from "@/assets/img12.jpeg"
+import cartItem2 from "@/assets/img15.jpeg"
+
 const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
@@ -36,7 +40,7 @@ const CartGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  
+
   @media (min-width: 768px) {
     grid-template-columns: 2fr 1fr;
   }
@@ -58,6 +62,7 @@ const ItemImage = styled.div`
   width: 33.333333%;
   aspect-ratio: 1;
   background-color: white;
+  position: relative;
 `
 
 const ItemDetails = styled.div`
@@ -221,14 +226,14 @@ const ContinueButton = styled.button`
   background-color: #e5e5e5;
   color: black;
   font-weight: 500;
-  
+
   &:hover {
     background-color: #d4d4d4;
   }
 `
 
 export default function CartPage() {
-  // Simuler les données du panier
+  // Données du panier avec les images importées
   const cartItems = [
     {
       id: 1,
@@ -237,7 +242,8 @@ export default function CartPage() {
       color: "Black",
       size: "L",
       quantity: 1,
-      image: "/placeholder.svg?height=150&width=120",
+      image: cartItem1,
+      type: "Cotton T Shirt",
     },
     {
       id: 2,
@@ -246,7 +252,8 @@ export default function CartPage() {
       color: "Black",
       size: "L",
       quantity: 1,
-      image: "/placeholder.svg?height=150&width=120",
+      image: cartItem2,
+      type: "Cotton T Shirt",
     },
   ]
 
@@ -269,13 +276,7 @@ export default function CartPage() {
           {cartItems.map((item) => (
             <CartItem key={item.id}>
               <ItemImage>
-                <Image
-                  src={item.image || "/placeholder.svg"}
-                  alt={item.name}
-                  width={120}
-                  height={150}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
+                <Image src={item.image || "/placeholder.svg"} alt={item.name} fill style={{ objectFit: "cover" }} />
               </ItemImage>
 
               <ItemDetails>
@@ -308,7 +309,7 @@ export default function CartPage() {
                 </ItemActions>
 
                 <ItemInfo>
-                  <ItemType>Cotton T Shirt</ItemType>
+                  <ItemType>{item.type}</ItemType>
                   <ItemName>{item.name}</ItemName>
                   <ItemPrice>{item.price}</ItemPrice>
                 </ItemInfo>

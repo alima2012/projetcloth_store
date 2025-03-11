@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 // Importation directe des images des produits du checkout
 import checkoutItem1 from "@/assets/img12.jpeg"
-import checkoutItem2 from "@/assets/img15.jpeg"
+import checkoutItem2 from "@/assets/img1.jpeg"
 
 const Container = styled.div`
   max-width: 1400px;

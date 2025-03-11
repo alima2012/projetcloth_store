@@ -122,7 +122,7 @@ export default function Navbar() {
         </Nav>
 
         <LogoContainer>
-          <Image src="/placeholder.svg?height=32&width=32" alt="XIV Logo" width={32} height={32} />
+          <Image src="/assets/logo.jpg" alt="" width={32} height={32} />
         </LogoContainer>
 
         <ActionContainer>
@@ -133,7 +133,7 @@ export default function Navbar() {
             <ShoppingBag size={20} color="white" />
             <CartCount>0</CartCount>
           </IconButton>
-          <IconButton href="/account">
+          <IconButton href="/sign-in">
             <User size={20} color="white" />
           </IconButton>
         </ActionContainer>
