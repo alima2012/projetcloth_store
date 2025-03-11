@@ -102,7 +102,7 @@ export default function SignIn() {
             <Separator />
            
             <FooterText>
-              Vous n'avez pas de compte? <StyledLink href="sign-up">Créer</StyledLink>
+              Vous n'avez pas de compte? <StyledLink href="/admin/login">Créer</StyledLink>
             </FooterText>
           </CardContent>
         </StyledCard>

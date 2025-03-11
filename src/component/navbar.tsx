@@ -121,9 +121,9 @@ export default function Navbar() {
           </NavLink>
         </Nav>
 
-        <LogoContainer>
+        {/* <LogoContainer>
           <Image src="/assets/logo.jpg" alt="" width={32} height={32} />
-        </LogoContainer>
+        </LogoContainer> */}
 
         <ActionContainer>
           <IconButton href="/favorites">

@@ -85,7 +85,7 @@ export default function SignUp() {
   const [form, setForm] = useState({ name: "", email: "", password: "", confirmPassword: "" });
   const [pending, setPending] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setPending(true);
     await fetch("/api/auth/signup", {
