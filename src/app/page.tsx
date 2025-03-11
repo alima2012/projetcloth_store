@@ -6,6 +6,17 @@ import styled, { ThemeProvider } from "styled-components"
 import { Search, Heart, ShoppingBag, User, Menu, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
 import StyledComponentsRegistry from "@/libs/registry"
 import { theme } from "@/libs/theme"
+import sliderImage1 from "./assets/img1.jpeg"
+import sliderImage2 from "./assets/img2.jpeg"
+import sliderImage3 from "./assets/img3.jpeg"
+import sliderImage4 from "./assets/img4.jpeg"
+import sliderImage5 from "./assets/img5.jpeg"
+import sliderImage6 from "./assets/img6.jpeg"
+import sliderImage7 from "./assets/img7.jpeg"
+import sliderImage8 from "./assets/img8.jpeg"
+import sliderImage9 from "./assets/img9.jpeg"
+import sliderImage10 from "./assets/img10.jpeg"
+import sliderImage11 from "./assets/img11.jpeg"
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -80,7 +91,7 @@ export default function Home() {
                 <Slider currentSlide={currentSlide}>
                   <Slide>
                     <Image
-                      src="/placeholder.svg?height=600&width=450"
+                      src={sliderImage1 || "/placeholder.svg"}
                       alt="Model in white outfit with tan shoes"
                       width={450}
                       height={600}
@@ -89,7 +100,7 @@ export default function Home() {
                   </Slide>
                   <Slide>
                     <Image
-                      src="/placeholder.svg?height=600&width=450"
+                      src={sliderImage2 || "/placeholder.svg"}
                       alt="Model in black t-shirt with embroidery"
                       width={450}
                       height={600}
@@ -129,7 +140,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage3 || "/placeholder.svg"}
                         alt="Embroidered Sportswear Shirt"
                         fill
                         style={{ objectFit: "cover" }}
@@ -146,7 +157,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage4 || "/placeholder.svg"}
                         alt="Basic Slim Fit T-Shirt"
                         fill
                         style={{ objectFit: "cover" }}
@@ -163,7 +174,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage5 || "/placeholder.svg"}
                         alt="Blurred Print T-Shirt"
                         fill
                         style={{ objectFit: "cover" }}
@@ -180,7 +191,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage6 || "/placeholder.svg"}
                         alt="Full Sleeve Zipper"
                         fill
                         style={{ objectFit: "cover" }}
@@ -233,7 +244,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage7 || "/placeholder.svg"}
                         alt="Basic Heavy Weight T-Shirt"
                         fill
                         style={{ objectFit: "cover" }}
@@ -250,7 +261,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage2 || "/placeholder.svg"}
                         alt="Soft Wash Straight Fit Jeans"
                         fill
                         style={{ objectFit: "cover" }}
@@ -267,7 +278,7 @@ export default function Home() {
                   <ProductCard>
                     <ProductImage>
                       <Image
-                        src="/placeholder.svg?height=300&width=300"
+                        src={sliderImage8 || "/placeholder.svg"}
                         alt="Basic Heavy Weight T-Shirt"
                         fill
                         style={{ objectFit: "cover" }}
@@ -303,7 +314,7 @@ export default function Home() {
                 <ImageGallery>
                   <GalleryImageWrapper className="image1">
                     <Image
-                      src="/placeholder.svg?height=500&width=400"
+                      src={sliderImage9 || "/placeholder.svg"}
                       alt="Person in grey outfit"
                       width={400}
                       height={500}
@@ -312,7 +323,7 @@ export default function Home() {
                   </GalleryImageWrapper>
                   <GalleryImageWrapper className="image2">
                     <Image
-                      src="/placeholder.svg?height=600&width=400"
+                      src={sliderImage10 || "/placeholder.svg"}
                       alt="Person in brown coat"
                       width={400}
                       height={600}
@@ -321,7 +332,7 @@ export default function Home() {
                   </GalleryImageWrapper>
                   <GalleryImageWrapper className="image3">
                     <Image
-                      src="/placeholder.svg?height=400&width=400"
+                      src={sliderImage2 || "/placeholder.svg"}
                       alt="Person in white outfit"
                       width={400}
                       height={400}
@@ -330,7 +341,7 @@ export default function Home() {
                   </GalleryImageWrapper>
                   <GalleryImageWrapper className="image4">
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src={sliderImage11 || "/placeholder.svg"}
                       alt="White fabric detail"
                       width={400}
                       height={300}
