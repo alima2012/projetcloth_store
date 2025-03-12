@@ -137,7 +137,7 @@ export default function AdminLogin() {
       } else {
         setError("Identifiants invalides. Veuillez réessayer.")
       }
-    } catch (err) {
+    } catch (error) {
       setError("Une erreur est survenue. Veuillez réessayer.")
     } finally {
       setIsLoading(false)
@@ -152,7 +152,7 @@ export default function AdminLogin() {
           Cloth_Store
         </Logo>
 
-        <Title>Connexion à l'administration</Title>
+        <Title>Connexion Admin</Title>
 
         <Form onSubmit={handleSubmit}>
           <FormGroup>

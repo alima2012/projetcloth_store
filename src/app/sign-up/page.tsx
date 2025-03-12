@@ -1,11 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardDescription, CardContent, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import styled from "styled-components";
-import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 
 const Container = styled.div`

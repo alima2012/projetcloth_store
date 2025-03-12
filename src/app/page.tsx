@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ChevronLeft, ChevronRight, Sidebar } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import styled from "styled-components"
 
 // Importation directe des images

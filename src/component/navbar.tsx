@@ -4,7 +4,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Heart, ShoppingBag, User } from "lucide-react"
 import styled from "styled-components"
-import Image from "next/image"
 
 const Header = styled.header`
   position: sticky;
@@ -53,13 +52,6 @@ const NavLink = styled(Link)<{ $active?: boolean }>`
   }
 `
 
-const LogoContainer = styled.div`
-  margin-left: 2rem;
-  display: flex;
-  align-items: center;
-  height: 32px;
-  width: 32px;
-`
 
 const ActionContainer = styled.div`
   margin-left: auto;

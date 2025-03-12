@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import Link from "next/link"
 import styled from "styled-components"
-import { Users, ShoppingBag, BarChart2, Settings, LogOut, Menu, X } from "lucide-react"
+import { Users, ShoppingBag, BarChart2, LogOut, Menu, X } from "lucide-react"
 
 const AdminLayout = styled.div`
   display: flex;

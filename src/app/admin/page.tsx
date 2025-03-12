@@ -213,10 +213,6 @@ const ActivityTitle = styled.div`
   margin-bottom: 0.25rem;
 `
 
-const ActivityTime = styled.div`
-  font-size: 0.75rem;
-  color: #6b7280;
-`
 
 export default function AdminDashboard() {
   const [isLoading, setIsLoading] = useState(true)
@@ -238,7 +234,7 @@ export default function AdminDashboard() {
     <DashboardContainer>
       <PageHeader>
         <Title>Tableau de bord</Title>
-        <Subtitle>Bienvenue dans votre espace d'administration</Subtitle>
+        <Subtitle>Bienvenue dans votre espace administrateur</Subtitle>
       </PageHeader>
 
       <StatsGrid>
