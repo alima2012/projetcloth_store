@@ -248,7 +248,7 @@ export default function AdminDashboard() {
               <DollarSign size={20} />
             </StatIcon>
           </StatHeader>
-          <StatValue>12,628 €</StatValue>
+          <StatValue>0 €</StatValue>
           <StatLabel>Revenu total</StatLabel>
           <StatChange $positive={true}>
             <ArrowUp size={16} />
@@ -261,7 +261,7 @@ export default function AdminDashboard() {
               <ShoppingBag size={20} />
             </StatIcon>
           </StatHeader>
-          <StatValue>356</StatValue>
+          <StatValue>0</StatValue>
           <StatLabel>Commandes</StatLabel>
           <StatChange $positive={true}>
             <ArrowUp size={16} />
@@ -274,7 +274,7 @@ export default function AdminDashboard() {
               <Users size={20} />
             </StatIcon>
           </StatHeader>
-          <StatValue>2,420</StatValue>
+          <StatValue>0</StatValue>
           <StatLabel>Clients</StatLabel>
           <StatChange $positive={true}>
             <ArrowUp size={16} />
@@ -287,7 +287,7 @@ export default function AdminDashboard() {
               <TrendingUp size={20} />
             </StatIcon>
           </StatHeader>
-          <StatValue>35.42 €</StatValue>
+          <StatValue>0</StatValue>
           <StatLabel>Valeur moyenne</StatLabel>
           <StatChange $positive={false}>
             <ArrowDown size={16} />
@@ -375,7 +375,6 @@ export default function AdminDashboard() {
               </ActivityIcon>
               <ActivityContent>
                 <ActivityTitle>Nouveau produit ajouté</ActivityTitle>
-                <ActivityTime>Il y a 10 minutes</ActivityTime>
               </ActivityContent>
             </ActivityItem>
 
@@ -385,7 +384,6 @@ export default function AdminDashboard() {
               </ActivityIcon>
               <ActivityContent>
                 <ActivityTitle>Nouvel utilisateur inscrit</ActivityTitle>
-                <ActivityTime>Il y a 1 heure</ActivityTime>
               </ActivityContent>
             </ActivityItem>
 
@@ -395,7 +393,6 @@ export default function AdminDashboard() {
               </ActivityIcon>
               <ActivityContent>
                 <ActivityTitle>Nouvelle commande reçue</ActivityTitle>
-                <ActivityTime>Il y a 3 heures</ActivityTime>
               </ActivityContent>
             </ActivityItem>
 
@@ -405,7 +402,6 @@ export default function AdminDashboard() {
               </ActivityIcon>
               <ActivityContent>
                 <ActivityTitle>Produit mis à jour</ActivityTitle>
-                <ActivityTime>Il y a 5 heures</ActivityTime>
               </ActivityContent>
             </ActivityItem>
 
@@ -415,7 +411,6 @@ export default function AdminDashboard() {
               </ActivityIcon>
               <ActivityContent>
                 <ActivityTitle>Utilisateur mis à jour</ActivityTitle>
-                <ActivityTime>Il y a 8 heures</ActivityTime>
               </ActivityContent>
             </ActivityItem>
           </ActivityList>
