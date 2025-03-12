@@ -87,7 +87,7 @@ export default function SignUp() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setPending(true);
-    await fetch("/api/auth/signup", {
+    await fetch("", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
