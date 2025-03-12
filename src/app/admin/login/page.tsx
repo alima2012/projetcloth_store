@@ -135,10 +135,12 @@ export default function AdminLogin() {
         // Authentification réussie
         router.push("/admin")
       } else {
-        setError("Identifiants invalides. Veuillez réessayer.")
+        setError("Identifiants invalides. Veuillez réessayer ")
       }
     } catch (error) {
       setError("Une erreur est survenue. Veuillez réessayer.")
+      console.error("File attachment error:", error)
+
     } finally {
       setIsLoading(false)
     }

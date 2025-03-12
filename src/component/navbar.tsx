@@ -108,7 +108,7 @@ export default function Navbar() {
           <NavLink href="/collections" $active={pathname === "/collections"}>
             Collections
           </NavLink>
-          <NavLink href="/new" $active={pathname === "/new"}>
+          <NavLink href="/" $active={pathname === "/"}>
             New
           </NavLink>
         </Nav>
@@ -118,8 +118,8 @@ export default function Navbar() {
         </LogoContainer> */}
 
         <ActionContainer>
-          <IconButton href="/favorites">
-            <Heart size={20} color="white" />
+          <IconButton href="/admin">
+            <User size={20} color="white">A</User>
           </IconButton>
           <IconButton href="/cart">
             <ShoppingBag size={20} color="white" />
