@@ -111,6 +111,9 @@ export default function Navbar() {
           <NavLink href="/" $active={pathname === "/"}>
             New
           </NavLink>
+          <NavLink href="/cart" $active={pathname === "/cart"}>
+            Shopping Bag
+          </NavLink>
         </Nav>
 
         {/* <LogoContainer>
