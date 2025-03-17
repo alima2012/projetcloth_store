@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight, Search } from "lucide-react"
 import styled from "styled-components"
 
 // Importation directe des images
@@ -364,7 +364,7 @@ export default function Home() {
     <PageContainer>
       {/* Hero Section */}
       <Section>
-        <HeroGrid>           
+        <HeroGrid>
           <HeroContent>
             <HeroTitle>
               NEW
@@ -383,6 +383,7 @@ export default function Home() {
               </ButtonIcon>
             </HeroButton>
           </HeroContent>
+
           <ImageGrid>
             {heroImages.map((image, index) => (
               <ImageContainer key={index}>
@@ -397,6 +398,7 @@ export default function Home() {
             ))}
           </ImageGrid>
         </HeroGrid>
+        
         <PaginationControls>
           <PaginationButton>
             <ChevronLeft size={16} />

@@ -238,57 +238,7 @@ export default function AdminDashboard() {
       </PageHeader>
 
       <StatsGrid>
-        <StatCard>
-          <StatHeader>
-            <StatIcon $bgColor="#1a1a1a">
-              <DollarSign size={20} />
-            </StatIcon>
-          </StatHeader>
-          <StatValue>0 €</StatValue>
-          <StatLabel>Revenu total</StatLabel>
-          <StatChange $positive={true}>
-            <ArrowUp size={16} />
-          </StatChange>
-        </StatCard>
-
-        <StatCard>
-          <StatHeader>
-            <StatIcon $bgColor="#4f46e5">
-              <ShoppingBag size={20} />
-            </StatIcon>
-          </StatHeader>
-          <StatValue>0</StatValue>
-          <StatLabel>Commandes</StatLabel>
-          <StatChange $positive={true}>
-            <ArrowUp size={16} />
-          </StatChange>
-        </StatCard>
-
-        <StatCard>
-          <StatHeader>
-            <StatIcon $bgColor="#0891b2">
-              <Users size={20} />
-            </StatIcon>
-          </StatHeader>
-          <StatValue>0</StatValue>
-          <StatLabel>Clients</StatLabel>
-          <StatChange $positive={true}>
-            <ArrowUp size={16} />
-          </StatChange>
-        </StatCard>
-
-        <StatCard>
-          <StatHeader>
-            <StatIcon $bgColor="#ca8a04">
-              <TrendingUp size={20} />
-            </StatIcon>
-          </StatHeader>
-          <StatValue>0</StatValue>
-          <StatLabel>Valeur moyenne</StatLabel>
-          <StatChange $positive={false}>
-            <ArrowDown size={16} />
-          </StatChange>
-        </StatCard>
+       
       </StatsGrid>
 
       <SectionGrid>
@@ -356,60 +306,6 @@ export default function AdminDashboard() {
               </TableRow>
             </tbody>
           </Table>
-        </Section>
-
-        <Section>
-          <SectionHeader>
-            <SectionTitle>Activité récente</SectionTitle>
-            <SeeAllLink>Voir tout</SeeAllLink>
-          </SectionHeader>
-
-          <ActivityList>
-            <ActivityItem>
-              <ActivityIcon $bgColor="#1a1a1a">
-                <ShoppingBag size={16} />
-              </ActivityIcon>
-              <ActivityContent>
-                <ActivityTitle>Nouveau produit ajouté</ActivityTitle>
-              </ActivityContent>
-            </ActivityItem>
-
-            <ActivityItem>
-              <ActivityIcon $bgColor="#4f46e5">
-                <Users size={16} />
-              </ActivityIcon>
-              <ActivityContent>
-                <ActivityTitle>Nouvel utilisateur inscrit</ActivityTitle>
-              </ActivityContent>
-            </ActivityItem>
-
-            <ActivityItem>
-              <ActivityIcon $bgColor="#0891b2">
-                <DollarSign size={16} />
-              </ActivityIcon>
-              <ActivityContent>
-                <ActivityTitle>Nouvelle commande reçue</ActivityTitle>
-              </ActivityContent>
-            </ActivityItem>
-
-            <ActivityItem>
-              <ActivityIcon $bgColor="#ca8a04">
-                <ShoppingBag size={16} />
-              </ActivityIcon>
-              <ActivityContent>
-                <ActivityTitle>Produit mis à jour</ActivityTitle>
-              </ActivityContent>
-            </ActivityItem>
-
-            <ActivityItem>
-              <ActivityIcon $bgColor="#1a1a1a">
-                <Users size={16} />
-              </ActivityIcon>
-              <ActivityContent>
-                <ActivityTitle>Utilisateur mis à jour</ActivityTitle>
-              </ActivityContent>
-            </ActivityItem>
-          </ActivityList>
         </Section>
       </SectionGrid>
     </DashboardContainer>

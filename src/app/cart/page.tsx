@@ -343,7 +343,7 @@ export default function CartPage() {
             <TermsText htmlFor="terms">I agree to the Terms and Conditions</TermsText>
           </TermsContainer>
 
-          <ContinueButton>CONTINUE</ContinueButton>
+          <ContinueButton><Link href="/checkout">CONTINUE</Link></ContinueButton>
         </OrderSummary>
       </CartGrid>
     </Container>

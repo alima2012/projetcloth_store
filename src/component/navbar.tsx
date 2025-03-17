@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ShoppingBag, User } from "lucide-react"
+import { Heart, Image, ShoppingBag, User } from "lucide-react"
 import styled from "styled-components"
 
 const Header = styled.header`
@@ -111,9 +111,7 @@ export default function Navbar() {
           <NavLink href="/" $active={pathname === "/"}>
             New
           </NavLink>
-          <NavLink href="/cart" $active={pathname === "/cart"}>
-            Shopping Bag
-          </NavLink>
+          
         </Nav>
 
         {/* <LogoContainer>
@@ -121,8 +119,8 @@ export default function Navbar() {
         </LogoContainer> */}
 
         <ActionContainer>
-          <IconButton href="/admin">
-            <User size={20} color="white">A</User>
+          <IconButton href="">
+            <Heart size={20} color="white"></Heart>
           </IconButton>
           <IconButton href="/cart">
             <ShoppingBag size={20} color="white" />

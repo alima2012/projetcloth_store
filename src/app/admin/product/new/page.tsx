@@ -284,21 +284,32 @@ export default function NewProductPage() {
     setVariants((prev) => prev.filter((variant) => variant.id !== id))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
 
-    try {
-      // Simuler un appel API
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+  //   try {
+  //     // Simuler un appel API
+  //     await new Promise((resolve) => setTimeout(resolve, 1500))
 
-      // Rediriger vers la liste des produits
-      router.push("/admin/product")
-    } catch (error) {
-      console.error("Erreur lors de la création du produit:", error)
-      setIsSubmitting(false)
-    }
-  }
+  //     // Rediriger vers la liste des produits
+  //     router.push("/admin/product")
+  //   } catch (error) {
+  //     console.error("Erreur lors de la création du produit:", error)
+  //     setIsSubmitting(false)
+  //   }
+  // }
+
+  const handleSubmit = async () => {
+    const response = await fetch("/api/products", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: "T-Shirt", price: 19.99, category: "Clothing", image: "/img.jpg" }),
+    });
+    const data = await response.json();
+    console.log(data);
+  };
+  
 
   return (
     <Container>

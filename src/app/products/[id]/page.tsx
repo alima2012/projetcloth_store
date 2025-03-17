@@ -12,6 +12,7 @@ import img2 from "@/assets/img16.jpeg"
 import img3 from "@/assets/img17.jpeg"
 import img4 from "@/assets/img18.jpeg"
 import img5 from "@/assets/img19.jpeg"
+import Link from "next/link"
 
 
 // Styled components
@@ -293,7 +294,7 @@ export default function ProductPage() {
           </SizeHelp>
         </Section>
 
-        <AddButton disabled={selectedSize === null}>ADD</AddButton>
+        <AddButton disabled={selectedSize === null} ><Link href="/checkout">ADD</Link></AddButton>
       </ProductInfo>
     </Container>
   )

@@ -6,8 +6,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import styled from "styled-components"
 
 // Importation directe des images des produits du checkout
-import checkoutItem1 from "@/assets/img12.jpeg"
-import checkoutItem2 from "@/assets/img1.jpeg"
+import checkoutItem1 from "@/assets/img1.jpeg"
+import checkoutItem2 from "@/assets/img18.jpeg"
 
 const Container = styled.div`
   max-width: 1400px;
@@ -286,7 +286,7 @@ export default function CheckoutPage() {
 
       <TabsContainer>
         <Tab $active>INFORMATION</Tab>
-        <Tab>SHIPPING</Tab>
+        <Tab><Link href="/shipping">SHIPPING</Link></Tab>
         <Tab>PAYMENT</Tab>
       </TabsContainer>
 
@@ -325,7 +325,7 @@ export default function CheckoutPage() {
           </FormSection>
 
           <ContinueButton>
-            Shipping
+            <Link href="/shipping">Shipping</Link>
             <ButtonIcon>
               <ChevronRight size={16} />
             </ButtonIcon>
