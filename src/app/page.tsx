@@ -1,7 +1,8 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight, Search} from "lucide-react"
+
 import styled from "styled-components"
 
 // Importation directe des images
@@ -341,6 +342,29 @@ const LogoSubtext = styled.div`
   margin-top: 0.5rem;
 `
 
+const SearchContainer = styled.div`
+  position: relative;
+`
+
+const SearchInput = styled.input`
+  height: 3rem;
+  padding: 0 1rem 0 2.5rem;
+  background-color: #e5e5e5;
+  border: none;
+  width: 100%;
+
+  &::placeholder {
+    color: #9ca3af;
+  }
+`
+const SearchIcon = styled.div`
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+`
+
 export default function Home() {
   // Création des tableaux d'images pour chaque section
   const heroImages = [heroImage1, heroImage2]
@@ -366,6 +390,18 @@ export default function Home() {
       <Section>
         <HeroGrid>
           <HeroContent>
+            <TabsContainer>
+              <TabButton>Men</TabButton>
+              <TabButton>Women</TabButton>
+              <TabButton>KID</TabButton>
+
+              <SearchContainer>
+                <SearchIcon>
+                  <Search size={20} />
+                </SearchIcon>
+                <SearchInput type="search" placeholder="Search" />
+              </SearchContainer>
+            </TabsContainer>
             <HeroTitle>
               NEW
               <br />
@@ -376,6 +412,8 @@ export default function Home() {
               <br />
               2024
             </HeroSubtitle>
+
+
             <HeroButton href="/collections">
               Go To Shop
               <ButtonIcon>
@@ -398,7 +436,7 @@ export default function Home() {
             ))}
           </ImageGrid>
         </HeroGrid>
-        
+
         <PaginationControls>
           <PaginationButton>
             <ChevronLeft size={16} />

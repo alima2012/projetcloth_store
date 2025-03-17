@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 import Link from "next/link"
 import styled from "styled-components"
 import { ChevronLeft, Upload, X, Plus } from "lucide-react"
