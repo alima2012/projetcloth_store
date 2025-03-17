@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import styled from "styled-components"
-import { ShoppingBag, Users, DollarSign, TrendingUp, ArrowUp, ArrowDown } from "lucide-react"
 
 const DashboardContainer = styled.div`
   max-width: 1400px;
@@ -36,50 +35,6 @@ const StatsGrid = styled.div`
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
   }
-`
-
-const StatCard = styled.div`
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-`
-
-const StatHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-`
-
-const StatIcon = styled.div<{ $bgColor: string }>`
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.5rem;
-  background-color: ${(props) => props.$bgColor};
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const StatValue = styled.div`
-  font-size: 1.875rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-`
-
-const StatLabel = styled.div`
-  font-size: 0.875rem;
-  color: #6b7280;
-`
-
-const StatChange = styled.div<{ $positive: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.875rem;
-  color: ${(props) => (props.$positive ? "#10b981" : "#ef4444")};
 `
 
 const SectionGrid = styled.div`
@@ -179,38 +134,6 @@ const StatusBadge = styled.span<{ $status: "completed" | "processing" | "cancell
         return ""
     }
   }}
-`
-
-const ActivityList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`
-
-const ActivityItem = styled.li`
-  display: flex;
-  gap: 1rem;
-`
-
-const ActivityIcon = styled.div<{ $bgColor: string }>`
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 9999px;
-  background-color: ${(props) => props.$bgColor};
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-`
-
-const ActivityContent = styled.div`
-  flex: 1;
-`
-
-const ActivityTitle = styled.div`
-  font-weight: 500;
-  margin-bottom: 0.25rem;
 `
 
 

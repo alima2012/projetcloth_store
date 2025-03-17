@@ -18,58 +18,6 @@ const Container = styled.div`
   min-height: 100vh;
 `
 
-const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-`
-
-const NavContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-`
-
-const NavLink = styled(Link)`
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #000;
-  
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const IconButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: #000;
-  color: white;
-  border: none;
-  cursor: pointer;
-  
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const MenuButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
 const CheckoutHeader = styled.div`
   display: flex;
   align-items: center;

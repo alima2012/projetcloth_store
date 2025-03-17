@@ -7,8 +7,8 @@ import { X, RefreshCw, Heart, ChevronLeft, ChevronRight } from 'lucide-react'
 import styled from "styled-components"
 
 // Importez vos images en haut du fichier
-import tshirtImage1 from '@/assets/img1.jpeg'
-import tshirtImage2 from '@/assets/img10.jpeg'
+// import img1 from '@/assets/img1.jpeg'
+// import img10 from '@/assets/img10.jpeg'
 import productImages from "../cart/product-images"
 
 // Exemple d'utilisation du fichier product-images.ts
@@ -48,32 +48,6 @@ const NavLink = styled(Link)`
   }
 `
 
-const IconButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: #000;
-  color: white;
-  border: none;
-  cursor: pointer;
-  
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const MenuButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
 
 const CartHeader = styled.div`
   display: flex;
@@ -307,15 +281,6 @@ const ContinueButton = styled.button`
   }
 `
 
-const CloseButton = styled.button`
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.25rem;
-`
 
 export default function CartPage() {
     // Dans votre état initial

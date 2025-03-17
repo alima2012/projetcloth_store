@@ -260,7 +260,7 @@ const SubmitButton = styled.button`
 `
 
 export default function NewProductPage() {
-  const router = useRouter()
+  // const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [images, setImages] = useState<string[]>([])
   const [variants, setVariants] = useState([{ id: 1, color: "", size: "", price: "", stock: "" }])
@@ -301,7 +301,9 @@ export default function NewProductPage() {
   // }
 
   const handleSubmit = async () => {
+    setIsSubmitting(true)
     const response = await fetch("/api/products", {
+      
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: "T-Shirt", price: 19.99, category: "Clothing", image: "/img.jpg" }),

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Heart, Image, ShoppingBag, User } from "lucide-react"
+import { Heart,  ShoppingBag, User } from "lucide-react"
 import styled from "styled-components"
 
 const Header = styled.header`
