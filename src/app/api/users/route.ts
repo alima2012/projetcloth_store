@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import dbConnect from "@/lib/mongodb";
 import User from "@/models/User";
 import bcrypt from "bcryptjs";
+import connectToDatabase from "@/lib/mongodb";
 
 export async function POST(req: Request) {
-  await dbConnect();
+  await connectToDatabase();
   try {
     const { firstName, lastName, email, password, role } = await req.json();
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -14,4 +14,3 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Erreur lors de l'ajout de l'utilisateur" }, { status: 500 });
   }
 }
-    

@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import dbConnect from "@/lib/mongodb";
 import Product from "@/models/Product";
+import connectToDatabase from "@/lib/mongodb";
 
 export async function POST(req: Request) {
-  await dbConnect();
+  await connectToDatabase();
   try {
     const body = await req.json();
     const newProduct = await Product.create(body);
